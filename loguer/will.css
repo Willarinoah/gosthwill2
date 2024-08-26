@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+body {
+    background-color: #050303;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form  {
+    background-color: #8f332d;
+    border-radius: 100px;
+    max-width: 500px;
+    padding: 110px 40px;
+    box-shadow: 50px 150px 200px;
+}
+form h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 55px;
+    color: #ffffff;
+}
+
+.container {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.conteiner>input {
+    width: 100%;
+    height: 300px;
+    border: none;
+    background-color: #ededed;
+    border-radius: 10px;
+    color: #eb7070;
+    font-size: 110px;
+    font-weight: 700;
+    padding: 25px 80px 0 20px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #9d9d9d;
+    position: absolute;
+    line-height: 100px;
+    top: -20;
+    left: 15px;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.conteiner input :focus ~ label,
+.container input :valid ~ label {
+    left: 10px;
+    top: -20px;
+    color: #dddbe2;
+}
+button {
+    display: block;
+    float: right;
+    width: 100px;
+    height:40px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    color: #d2a389f5;
+    font-size: 16px;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+form a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #d2a389f5;
+    font-weight: 50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+form  a:hover {
+    color: #fcfcfc;
+}
+

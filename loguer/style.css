@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Define a propriedade para todos os elementos. */
+* {
+    /* Remove a margem externa de todos os elementos. */
+    margin: 0;
+
+    /* Remove o espaçamento interno de todos os lados do elemento. */
+    padding: 0;
+
+    /* O preenchimento e a borda serão incluídos na largura e altura. */
+    box-sizing: border-box;
+
+    /* Define o tipo da fonte. */
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    /* Cor do fundo do elemento. */
+    background-color: #050303;
+
+    /* Altura mínima do elemento. */
+    /* Unidade de tamanho da tela vh e vw. */
+    min-height: 100vh;
+
+    /* Torna o elemento um flex container automaticamente,
+    transformando todos os seus filhos diretos em flex items. */
+    display: flex;
+
+    /* Alinha os itens flex no container de acordo com a direção. */
+    align-items: center;
+
+    /* Alinha os itens flex no container de acordo com a direção. */
+    justify-content: center;
+}
+
+form a {
+    background-color: #8f332d;
+
+    /* Arredonda os cantos. */
+    border-radius: 100px;
+
+    /* Largura máxima do elemento. */
+    max-width: 500px;
+
+    /* Gera espaço ao redor do conteúdo do elemento.
+    50px para os lados superior e inferior.
+    40px para os lados esquerdo e direito. */
+    padding: 110px 40px;
+
+    /* Adiciona sombra nos elementos. */
+    box-shadow: 50px 150px 200px;
+}
+
+form h1 {
+    /* Define o alinhamento do texto no elemento. */
+    text-align: center;
+
+    /* Cria espaço ao redor do elemento. */
+    margin: 40px 0;
+
+    /* Tamanho da fonte (corrigido de "font-style" para "font-size"). */
+    font-size: 155px;
+
+    /* Cor do texto. */
+    color: #ffffff;
+}
+
+.container {
+    /* Margem inferior do elemento. */
+    margin-bottom: 100px;
+
+    /* Relative - indica que está posicionado 
+    em relação à posição normal. */
+    position: relative;
+}
+
+.conteiner input {
+    /* Define a largura do elemento. */
+    width: 100%;
+
+    /* Define a altura do elemento. */
+    height: 300px;
+
+    /* Remove a borda. */
+    border: none;
+
+    background-color: #ededed;
+    border-radius: 10px;
+    color: #eb7070;
+
+    /* Tamanho da fonte. */
+    font-size: 110px;
+
+    /* Aumenta a largura do texto. */
+    font-weight: 700;
+
+    /* Gera espaço ao redor do conteúdo do elemento. 
+    (superior, direito, inferior e esquerdo). */
+    padding: 25px 80px 0 20px;
+}
+
+label {
+    /* Transforma o texto em letras maiúsculas. */
+    text-transform: uppercase;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #9d9d9d;
+
+    /* Posiciona o elemento de acordo com o
+    elemento pai, deixando de fazer parte do fluxo
+    comum do documento. */
+    position: absolute;
+
+    /* Define a altura da linha. */
+    line-height: 100px;
+
+    /* Posição vertical que necessita que o elemento
+    tenha uma posição determinada. */
+    top: 1;
+
+    /* Distância da borda esquerda. */
+    left: 200px;
+
+    /* Impede a seleção de texto. */
+    user-select: none;
+
+    /* Determina se o elemento deve agir ou não a eventos de ponteiro. */
+    pointer-events: none;
+
+    /* Altera os valores das propriedades
+    suavemente em um tempo determinado. */
+    transition: 0.5s;
+}
+
+.conteiner input :focus ~ label,
+.container input :valid ~ label {
+    left: 10px;
+    top: -16px;
+    color: #dddbe2;
+}
+
+button {
+    /* Elemento em bloco não permite elementos ao lado,
+    exceto quando existe a propriedade float. */
+    display: block;
+
+    /* Posiciona o elemento em bloco à direita. */
+    float: right;
+    width: 130px;
+    height:40px;
+
+    /* Auto - centraliza horizontalmente
+    o elemento em seu container. */
+    margin: 15px auto;
+    background-color: #ffffff;
+    color: #d2a389f5;
+    font-size: 28px;
+    border: none;
+    border-radius: 45px;
+
+    /* Muda o ponteiro do mouse. */
+    cursor: pointer;
+
+    /* Linear - Mesma velocidade do início ao fim. */
+    transition: 0.3s linear;
+}
+
+form a {
+    /* Remove o traço inferior dos links (text-decoration). */
+    text-decoration: none;
+    font-size: 35px;
+    color: #d2a389f5;
+    font-weight: 50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+form  a:hover {
+    color: #fcfcfc;
+}
+
+
+
+

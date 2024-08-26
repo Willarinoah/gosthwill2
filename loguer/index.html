@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--abaixo: atualiza o documento a cada 3s-->
+    <meta http-equiv="refresh" content="3">
+    <title>Connect login</title>
+    <link rel="stylesheet" tupe="text/css" href="will.css">
+</head>
+<!--envia a entrada do usuario no sevido-->
+
+<body>
+    <form action="#" method="POST">
+        <!--Titulo principal-->
+        <h1>Login</h1>
+        <!--div: conteiner generico estilizavel no css-->
+        <!--Usado quando ñ ha outra tag container adequada.-->
+        <div class="container">
+            <!--campo de entrada definido com tipo de entrada
+            definido para o texto-->
+            <!--required - indica que o preenchimento é 
+            obrigatorio-->
+            <input type="email" required name="email">
+                <label>E-mail</label>
+        </div>
+
+        <div class="container">
+            <input type="password" required name="password">
+                <label>password</label>
+        </div>
+
+        <!--criar um botão que envia os dados-->
+        <button>Entrar</button>
+        <a href="#">Criar conta</a>
+        <a href="#">Não consegue entrar?</a>
+    </form>
+
+</body>
+
+</html>
